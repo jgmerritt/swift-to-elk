@@ -1,0 +1,7 @@
+# Swift logs documentation: http://docs.openstack.org/developer/swift/logs.html
+
+# Swift proxy_access.log 'datetime' mapping
+SWIFT_PROXY_DATETIME %{MONTHDAY}[/]%{MONTH}[/]%{YEAR}[/]%{HOUR}[/]%{MINUTE}[/]%{SECOND}
+
+# Swift all.log 'datetime' mapping
+SWIFT_STORAGE_DATETIME %{MONTHDAY}[/]%{MONTH}[/]%{YEAR}[:]%{TIME}
