@@ -71,6 +71,7 @@ filebeat:
       # the type defines the document type these entries should be stored
       # in. Default: log
       #document_type: log
+      document_type: swift
 
       # Scan frequency in seconds.
       # How often these files should be checked for changes. In case it is set
@@ -354,6 +355,7 @@ shipper:
   # transaction published. Tags make it easy to group servers by different
   # logical properties.
   #tags: ["service-X", "web-tier"]
+  tags: ["proxy","account","container"]
 
   # Uncomment the following if you want to ignore transactions created
   # by the server on which the shipper is installed. This option is useful
